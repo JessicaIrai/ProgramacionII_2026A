@@ -1,4 +1,4 @@
-a = int(input("Ingrese A: "))
-b = int(input("Ingrese B: "))
+a = int(input("Ingrese numero A: "))
+b = int(input("Ingrese numero B: "))
 suma = a + b
 print(suma)
