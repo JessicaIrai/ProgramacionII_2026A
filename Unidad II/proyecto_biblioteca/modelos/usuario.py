@@ -1,13 +1,12 @@
-class Usuario:
-    def __init__(self, nombre, identificador):
-        self.__nombre = nombre
-        self.__identificador = identificador
+from modelos.persona import Persona 
 
-    def getNombre(self):
-        return self.__nombre
+class Usuario (Persona):
+    def __init__(self, nombre, identificador, tipo_usuario):
+        super().__init__(nombre, identificador)
+        self.__tipo_usuario = tipo_usuario
 
-    def getIdentificador(self):
-        return self.__identificador
+    def getTipoUsuario(self):
+        return self.__tipo_usuario
     
     def __str__(self):
-        return f"{self.__nombre} - {self.__identificador}"
+        return f"{super().__str__()} - {self.__tipo_usuario}"
