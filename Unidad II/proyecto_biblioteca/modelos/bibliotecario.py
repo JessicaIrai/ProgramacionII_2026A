@@ -12,3 +12,6 @@ class Bibliotecario(Usuario):
     def registrar_libro(self, biblioteca, libro):
         biblioteca.agregar_libro(libro)
         print(f"{self.getNombre()} registró el libro '{libro.getTitulo()}'")
+
+    def descripcion(self):
+        return f"Bibliotecario del area: {self._area}"

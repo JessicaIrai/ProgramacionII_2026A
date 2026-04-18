@@ -34,6 +34,8 @@ gestor.realizar_prestamo(libro1, alumno, "18-04-2026")
 #Imprimir prestamos
 gestor.listar_prestamos()
 
+print(bibliotecario1.descripcion())
+print(alumno.descripcion())
 
 
 #usuario1 = Usuario("Valeria", "2521578", "Estudiante")
